@@ -1,0 +1,18 @@
+export const CHANGE_GLOBAL = 'CHANGE_GLOBAL';
+export const CHANGE_SIDEACTION = 'CHANGE_SIDEACTION';
+export const CHANGE_REGION = 'CHANGE_REGION';
+export const CHANGE_MENUTREE = 'CHANGE_MENUTREE';
+export const CHANGE_PERMISSION = 'CHANGE_PERMISSION';
+export const SET_NOTICE_DATA = 'SET_NOTICE_DATA';
+export const ADD_TAB_VIEW = 'ADD_TAB_VIEW';
+export const REMOVE_TAB_VIEW = 'REMOVE_TAB_VIEW';
+export const CHANGE_TAB_ACTIVE = 'CHANGE_TAB_ACTIVE';
+export const CLEAR_TAB_VIEW = 'CLEAR_TAB_VIEW';
+export const SHOW_VIEWER = 'SHOW_VIEWER';
+export const SET_VIEWER_DATA = 'SET_VIEWER_DATA';
+export const ADD_KEEP_ALIVE = 'ADD_KEEP_ALIVE';
+export const REMOVE_KEEP_ALIVE = 'REMOVE_KEEP_ALIVE';
+export const CLEAR_KEEP_ALIVE = 'CLEAR_KEEP_ALIVE';
+export const SET_BREADCRUMB = 'SET_BREADCRUMB';
+export const SET_AUTH = 'SET_AUTH';
+// 所有修改state 在这里定义type(即方法名)

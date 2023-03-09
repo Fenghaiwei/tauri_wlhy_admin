@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+# 放开即可做到pre-commit eslint 拦截
+pnpm run eslint
+# 针对本次提交 eslint 拦截
+# npx lint-staged

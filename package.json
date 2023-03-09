@@ -1,0 +1,79 @@
+{
+  "name": "web-wlhy-admin",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:dev": "vue-cli-service build --mode dev",
+    "build:test": "vue-cli-service build --mode test",
+    "build:k8s": "vue-cli-service build --mode k8s",
+    "format": "prettier --config ./.prettierrc --write ./*.* ./src/**/*.js ./src/**/*.css ./src/**/*.vue",
+    "ci": "pnpm install --frozen-lockfile",
+    "commit:install": "node scripts/commit-install.js",
+    "husky:install": "husky install",
+    "commit": "git cz",
+    "eslint": "eslint --ext .js,.ts,.vue --ignore-path .eslintignore  src",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "update:version": "node scripts/update-version.js",
+    "sonar": "node scripts/sonar-scanner.js",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.2.0",
+    "@fe/calc": "^1.0.3",
+    "@fe/extend": "^1.0.2",
+    "@fe/filter": "^1.0.3",
+    "@fe/form-valid": "^1.0.4",
+    "@fe/utils": "^1.0.3",
+    "@fe/validator": "1.0.10",
+    "ant-design-vue": "^1.6.2",
+    "axios": "^0.19.1",
+    "clipboard-copy": "^4.0.1",
+    "core-js": "^2.6.5",
+    "dayjs": "^1.8.16",
+    "echarts": "^4.2.1",
+    "element-ui": "^2.13.2",
+    "es6-promise": "^4.2.8",
+    "html2canvas": "^1.4.1",
+    "jsencrypt": "^3.0.0-rc.1",
+    "qrcodejs2": "0.0.2",
+    "viewerjs": "^1.3.6",
+    "vue": "^2.6.10",
+    "vue-amap": "^0.5.10",
+    "vue-router": "^3.1.2",
+    "vue-slider-component": "^3.2.15",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@fe/eslint-config": "0.0.9",
+    "@tauri-apps/cli": "^1.2.3",
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-router": "~4.4.0",
+    "@vue/cli-plugin-vuex": "~4.4.0",
+    "@vue/cli-service": "^4.4.0",
+    "compression-webpack-plugin": "^6.1.1",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-git": "^1.4.1",
+    "eslint": "^8.33.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-url": "^9.0.0",
+    "sass": "^1.22.10",
+    "sass-loader": "^7.2.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": "eslint"
+  }
+}
